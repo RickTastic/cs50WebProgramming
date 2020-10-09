@@ -3,39 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="view-port" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>My Web Page!</title>
-    <style>
-      .grid {
-        background-color: green;
-        display: grid;
+    <style media="screen">
+      .row > div {
         padding: 20px;
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
-        grid-template-columns: 200px 200px auto;
-      }
-
-      .grid-item {
-        background-color: white;
-        font-size: 20px;
-        padding: 20px;
-        text-align: center;
+        background-color: teal;
+        border: 2px solid black;
       }
     </style>
   </head>
   <body>
-    <div class="grid">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-      <div class="grid-item">7</div>
-      <div class="grid-item">8</div>
-      <div class="grid-item">9</div>
-      <div class="grid-item">10</div>
-      <div class="grid-item">11</div>
-      <div class="grid-item">12</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          This is a section contained within a row which has a column width of 4.
+        </div>
+        <div class="col-4">This is another section.</div>
+        <div class="col-4">
+          This is the third and final section. We have used class <strong>col-4</strong>
+          three times.
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">This is a section</div>
+        <div class="col-6">This is another wider section</div>
+        <div class="col-3">This is a thrid section</div>
+      </div>
+    </div>
+    <br/>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <p>This is a section where we use <strong>col-lg-3</strong>
+            for three columns if the screen is large and <strong>col-sm-6</strong>
+            for six columns if the screen is smaller
+          </p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          This is another section
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          This is the third sectoin
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          This is the fourth section.
+        </div>
+      </div>
     </div>
   </body>
 </html>
